@@ -1,0 +1,90 @@
+# Công cụ: 
+- Estimate: Planning Poker: đo đạc 1 user story cần làm trong bao lâu
+- Vision board
+- Burn Down Chart
+
+# Mô hình kiểm thử: Behavior-Driven Development – BDD (hoặc ta có thể hiểu là Acceptance Test-Driven Development – ATDD)
+- Tham gia vào quá trình xây dựng mã nguồn với vai trò phân tích và xây dựng hệ thống kịch bản kiểm thử dưới góc độ ngôn 
+ngữ tự nhiên dễ hiểu từ các yêu cầu (requirement).
+- Giải thích và đưa ra các phương án xây dựng mã nguồn mang tính thực tiễn với người dùng ngay trước khi bắt tay xây dựng.
+- Kịch bản kiểm thử được phân chia làm 2 lớp: Lớp chấp nhận (feature/acceptance test) và Lớp đơn vị (unit test).
+Theo đó, kịch bản kiểm thử lớp đơn vị mang thuần tính thiết kế và phục vụ cho việc kiểm thử lớp đơn vị (Unit test) còn kịch 
+bản kiểm thử lớp chấp nhận có thể được tái sử dụng cho quá trình kiểm thử hồi quy về sau (Regression Test)
+
+# Test Plan trong Agile.
+Không như trong mô hình WaterFall, test plan trong mô hình Agile được viết và update liên tục trong mỗi vòng lặp bao gồm:
+-  Phạm vi test
+-  Những chức năng mới sẽ cần test
+-  Test level và test type
+-  Load test và Performance test
+-  Phân tích cơ sở hạ tầng
+-  Các rủi ro và giải pháp
+-  Nguồn lực
+-  Sản phẩm bàn giao và mốc thời gian
+
+# Agile Testing Strategies.
+Quy trình kiểm thử trong mô hình Agile gồm 4 trạng thái sau:
+
+(a) Iteration 0:
+Trong giai đoạn đầu tiên của iteration 0, bạn sẽ thực hiện những task khởi tạo đã được thiết lập bao gồm xác định những 
+người tham gia kiểm thử, cài đặt tool test, lên kế hoạch quản lý resource. Cụ thể bao gồm:
+-  Thành lập các business case cho project
+-  Thiết lập các boundary condition và phạm vi project
+-  Vạch ra những yêu cầu và use case quan trọng cần cân nhắc để triển khai
+-  Phác thảo một vài kiên trúc có thể áp dụng cho project
+-  Xác định các rủi ro
+-  Estimate chi phí và chuẩn bị một project phác thảo
+
+(b) Construction Iterations
+Pha thứ 2 trong quá trình kiểm thử đó là Construction Iterations, phần lớn các công việc kiểm thử sẽ được thực hiện trong 
+giải đoạn này. Pha này được xem như là một tập các vòng lặp và tăng trưởng, qua đó giải pháp dần được xây dựng. Để làm được 
+điều đó, trong mỗi một vòng lặp team sẽ thực thi một cách hiện thực Agile như XP, Scrum, Agile modeling, hay agile data.
+Trong Construction Iteration, team sẽ thực hiện các requirement được ưu tiên. Trong mỗi vòng lặp requirement thiết yếu nhất 
+sẽ được chọn từ backlog và thực hiện. Construction Iteration được phân lớp thành 2 phần: Confirmatory tesing và Investigative 
+tesing. Confirmatory tesing tập chung vào xác minh xem hệ thống có đáp ứng được mục đích của stakeholder giống như mô tả mà 
+team nhận và thực hiện hay không? Investigative testing phát hiện ra các vấn đề mà team đã bỏ sót hoặc bỏ qua, ngoài ra 
+Investigative testing còn kèn thêm integration testing, load/stress tesing và security testing.
+
+(c) Release (End Game)
+Mục tiêu của “Release, End Game” là để deploy hệ thống một cách thành công lên production. Hoạt động trong pha này bao gồm 
+training end user, support mọi người sử dụng sản phẩm. Ngoài ra, nó còn bao gồm maketing sản phẩm, back-up, restoration, 
+hoàn thiện hệ thống và tài liệu.
+Giai đoạn kiểm thử cuối cùng bao gồm system testing và acceptance testing. Để giai đoạn này có thể kết thúc tốt đẹp, bạn 
+cần đảm bảo đã kiểm thử một cách kĩ lưỡng sản phẩm khi nó còn ở trong các vòng lặp.
+
+(d) Production
+Sau giai đoạn release, sản phẩm sẽ chuyển sang giai đoạn production.
+
+# The Agile Testing Quadrant
+Agile Testing Quadrant tách tiến trình kiểm thử thành 4 góc giúp ta hiểu về cách thực hiện kiểm thử trong Agile
+
+(a) Agile Quadrant I
+Chất lượng cuả mã nguồn là mục tiêu chính cần quan tâm trong Quadrant này. Nó bao gồm các ca kiểm thử (theo hướng công nghệ) bao gồm:
+-  Unit tests
+-  Component Test
+
+(b) Agile Quadrant II
+Các ca kiểm thử phần này tập chung vào bussiness logic dựa trên requirement. Các loại kiểm thử trong Quadrant này bao gồm:
+-  Scenario và workflows testing
+-  User experience testing
+-  Pair testing
+
+(c) Agile Quadrant III
+Quadrant này cung cấp các phản hồi cho Quadrant I và Quadrant II. Các ca kiểm thử ở Quadrant này sẽ được sử dụng để là cơ sở thực hiện 
+Automation test. Trong Quadrant này, việc kiểm thử của vòng lặp được review và thực hiện để đảm bảo tính tin cậy của sản phẩm. Các loại 
+kiểm thử được thực hiện trong Quadrant này gồm có:
+-  Usability Testing
+-  Exploratory Testing
+-  Pair testing with customers
+-  Collaborative testing
+-  User acceptance testing
+
+(d) Agile quadrant IV
+Quadrant này tập chung vào kiểm tra các yêu cầu phi chức năng của như performance, security, stability… Các loại kiểm thử trong Quadrant 
+này bao gồm:
+-  Non-fucntion test như stress test, performance test
+-  Security test
+-  Infrastructure test
+-  Data migration test
+-  Scalability test
+-  Load test
