@@ -1,0 +1,23 @@
+BDD là viết tắt của (Behavior Driven Development)
+
+# Cách thực hiện:
+BDD                                    |  Test report
+----------------------------------------------------------------------------
+Bước 1: Viết user story (Given)        | re-conditions, steps to reproduce
+Bước 2: Viết tiêu chí chấp nhận (End)  | final steps to reproduce the error
+Bước 3: Viết ra scenario (Then)        | Expected behavior
+
+Given-When-Then thường được viết trước khi hệ thống được triển khai và bỏ qua hành vi có lỗi, 
+trong khi báo cáo lỗi được viết sau khi hệ thống đã được triển khai và cũng chứa lỗi
+
+Vd: 
+Scenerion: User muốn edit size của một ứng dụng để mua hàng
+Given: the Size is 50
+When: the User changes the Size to 100
+Then: the new Size should be 100
+
+Vai trò:
+
+Tester chịu trách nhiệm cung cấp dữ liệu thử nghiệm.
+Developer và kỹ sư Automation test chịu trách nhiệm triển khai kịch bản dưới dạng mã.
+Product owner nhận được ý kiến đóng góp về các trường hợp tiên tiến từ người dùng.
