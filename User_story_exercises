@@ -1,0 +1,20 @@
+
+# Template:
+- As a (who wants to accomplish something)
+- I want to (what they want to accomplish)
+- So that (why they want to accomplish that thing)
+
+An example:
+
+- As a bank customer
+- I want to withdraw money from an ATM
+- So that I’m not constrained by opening hours or lines at the teller’s
+
+Thực hành viết User story cho Trang web cung cấp khóa học online:
+
+1. Là một thành viên, tôi muốn giới thiệu bản thân trên trang web của tôi để mọi người có thể tìm hiểu về tôi bằng cách điền vào các 
+trường được định dạng sẵn.
+2. Là một thành viên, tôi muốn gắn những đường link ngoài ( FB, Instagram, LinkedIn,...) vào trang cá nhân của tôi.
+3. Là một Trainer, tôi muốn có một danh sách các lớp học được sắp xếp theo thứ tự ngày khai giảng và đính kèm tóm tắt khóa học.
+4. Là một Trainer, tôi muốn gắn một video ngắn giới thiệu bản thân trên trang cá nhân của tôi.
+5. Là một Trainer, tôi muốn nhóm các học viên của tôi thành một group để tôi có thể cập nhập thông tin hằng ngày.
